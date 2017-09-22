@@ -2271,7 +2271,7 @@ static void UnfreezeStructFromCopy (void *sbase, FreezeData *fields, int num_fie
 		{
 			relativeAddr = (int) *((pint *) ((uint8 *) base + fields[i].offset));
 			uint8	*relativeTo = (uint8 *) *((pint *) ((uint8 *) base + fields[i].offset2));
-			*((pint *) (addr)) = (pint) (relativeTo + relativeAddr);
+			*((pint *) (addr)) = (long) (relativeTo + relativeAddr);
 		}
 	}
 }

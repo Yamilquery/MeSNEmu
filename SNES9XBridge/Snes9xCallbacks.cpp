@@ -365,11 +365,11 @@ void _splitpath (const char* path, char* drive, char* dir, char* fname,
 {
 	*drive = 0;
   
-	char* slash = strrchr (path, '/');
+	char const *slash = strrchr (path, '/');
 	if (!slash)
 		slash = strrchr (path, '\\');
   
-	char* dot = strrchr (path, '.');
+	char const *dot = strrchr (path, '.');
   
 	if (dot && slash && dot < slash)
 		dot = NULL;

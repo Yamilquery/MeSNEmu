@@ -9,6 +9,7 @@ Previously available emulators were either only available on Cydia (which requir
 Features:
 =========
 
+- Compatibility with IOS 11 (64bits) (by Yamilquery)
 - SNES9X 1.53 codebase;
 - SMC and ZIP support;
 - Easy to understand UI;
